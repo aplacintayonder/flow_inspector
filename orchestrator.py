@@ -10,8 +10,35 @@ from collections import deque
 from PIL import Image, ImageChops, ImageDraw, ImageStat
 from pywinauto import Desktop
 
+try:
+    from openai import OpenAI
+except ImportError:
+    OpenAI = None
+
 OUTPUT_DIR = "output"
 AI_DIR = "ai"
+
+
+def load_dotenv_file(env_path: str = ".env"):
+    """Minimal .env loader so AZURE_OPENAI_* values can be used without extra deps."""
+    if not os.path.exists(env_path):
+        return
+
+    try:
+        with open(env_path, "r", encoding="utf-8") as f:
+            for raw_line in f:
+                line = raw_line.strip()
+                if not line or line.startswith("#") or "=" not in line:
+                    continue
+
+                key, value = line.split("=", 1)
+                key = key.strip()
+                value = value.strip().strip('"').strip("'")
+
+                if key and key not in os.environ:
+                    os.environ[key] = value
+    except OSError as e:
+        print(f"[-] Could not read .env file ({env_path}): {e}")
 
 class UIProvider:
     def __init__(self, script_path: str, app_name: str):
@@ -174,7 +201,7 @@ class SessionRecorder:
                 self._write_log(screen)
                 break
 
-    def build_ai_folder(self):
+    def build_ai_folder(self) -> str:
         """Copy unique screenshots into ai/ and write a consolidated flow.json."""
         os.makedirs(self.ai_dir, exist_ok=True)
         flow = {
@@ -206,10 +233,94 @@ class SessionRecorder:
         with open(flow_path, 'w', encoding='utf-8') as f:
             json.dump(flow, f, indent=4)
         print(f"\n[AI] Flow saved → {flow_path}  ({len(self.screens)} unique screens)")
+        return flow_path
+
+
+class ApplicationFlowAnalyzer:
+    def __init__(
+        self,
+        endpoint: str,
+        api_key: str,
+        deployment_name: str,
+        model_name: str | None = None,
+    ):
+        self.endpoint = endpoint
+        self.api_key = api_key
+        self.deployment_name = deployment_name
+        self.model_name = model_name or deployment_name
+
+    def analyze(self, flow_path: str, output_path: str) -> str | None:
+        if OpenAI is None:
+            print("[-] Missing dependency: openai. Install with: pip install openai")
+            return None
+
+        if not os.path.exists(flow_path):
+            print(f"[-] flow.json not found: {flow_path}")
+            return None
+
+        with open(flow_path, 'r', encoding='utf-8') as f:
+            flow_data = json.load(f)
+
+        client = OpenAI(
+            base_url=f"{self.endpoint}",
+            api_key=self.api_key
+        )
+
+        system_prompt = (
+            "You are a strict UI flow analyst. "
+            "Your job is to reconstruct the exact application flow from the provided JSON only. "
+            "Never invent screens, triggers, actions, coordinates, timestamps, or transitions. "
+            "If information is missing, explicitly say it is missing. "
+            "Keep names and ordering exactly as in the JSON. "
+            "Output must be valid markdown and deterministic."
+        )
+
+        prompt = (
+            "Analyze this automated UI exploration session and return the exact flow of the application. "
+            "Output markdown with these sections in this exact order: "
+            "1) App and Session Overview, "
+            "2) Screen-by-Screen Flow, "
+            "3) Trigger Graph (as bullet list from each trigger to resulting screen), "
+            "4) Final Linear Flow (numbered steps). "
+            "Do not invent actions that are not present in the JSON.\n\n"
+            "FLOW JSON:\n"
+            f"{json.dumps(flow_data, ensure_ascii=True, indent=2)}"
+        )
+
+        completion = client.chat.completions.create(
+            model=self.deployment_name,
+            messages=[
+                {
+                    "role": "system",
+                    "content": system_prompt,
+                },
+                {
+                    "role": "user",
+                    "content": prompt,
+                }
+            ],
+        )
+
+        result = completion.choices[0].message.content or ""
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write(result)
+
+        print("\n[OpenAI] Application flow analysis generated.")
+        print(f"[OpenAI] Saved analysis → {output_path}")
+        print("\n========== FLOW ANALYSIS ==========")
+        print(result)
+        print("===================================\n")
+        return result
 
 
 class DesktopNavigator:
-    def __init__(self, provider: UIProvider, max_explores: int = 0):
+    def __init__(
+        self,
+        provider: UIProvider,
+        max_explores: int = 0,
+        analyzer: ApplicationFlowAnalyzer | None = None,
+    ):
         """
         max_explores: maximum number of ui_explorer calls (0 = unlimited).
         The initial scan counts as 1.
@@ -217,6 +328,7 @@ class DesktopNavigator:
         self.provider = provider
         self.guard = InteractionGuard()
         self.max_explores = max_explores
+        self.analyzer = analyzer
 
     def _click_globally(self, coords: dict):
         """Uses PyAutoGUI for raw hardware-level clicking to bypass COM errors."""
@@ -315,7 +427,9 @@ class DesktopNavigator:
 
         current_scan_id, stop = _refresh_or_stop()
         if stop:
-            recorder.build_ai_folder()
+            flow_path = recorder.build_ai_folder()
+            if self.analyzer:
+                self.analyzer.analyze(flow_path, os.path.join(AI_DIR, "flow_analysis.md"))
             return
 
         queue = deque(self.provider.get_elements())
@@ -366,19 +480,44 @@ class DesktopNavigator:
                 # Prepend new elements; visited_sigs prevents re-clicking known ones
                 queue = deque(new_elements) + queue
 
-        recorder.build_ai_folder()
+        flow_path = recorder.build_ai_folder()
+        if self.analyzer:
+            self.analyzer.analyze(flow_path, os.path.join(AI_DIR, "flow_analysis.md"))
 
 if __name__ == "__main__":
     import argparse
+
+    load_dotenv_file(".env")
+
     parser = argparse.ArgumentParser(description="GabiBot UI orchestrator")
     parser.add_argument("--app",          default="Brave",  help="Window title to target (default: Brave)")
     parser.add_argument("--max-explores", default=0, type=int,
                         help="Maximum number of ui_explorer calls (0 = unlimited)")
+    parser.add_argument("--openai-endpoint", default=os.getenv("AZURE_OPENAI_ENDPOINT", ""),
+                        help="Azure OpenAI endpoint, for example: https://<resource>.cognitiveservices.azure.com/openai/v1/")
+    parser.add_argument("--openai-api-key", default=os.getenv("AZURE_OPENAI_API_KEY", ""),
+                        help="Azure OpenAI API key")
+    parser.add_argument("--openai-deployment", default=os.getenv("AZURE_OPENAI_DEPLOYMENT", "gpt-5.4"),
+                        help="Azure OpenAI deployment name (default: gpt-5.4)")
+    parser.add_argument("--openai-model", default=os.getenv("AZURE_OPENAI_MODEL", "gpt-5.4"),
+                        help="Model name hint (default: gpt-5.4)")
     args = parser.parse_args()
 
     EXPLORER_SCRIPT = "ui_explorer.py"
+    analyzer = None
+    if args.openai_endpoint and args.openai_api_key:
+        analyzer = ApplicationFlowAnalyzer(
+            endpoint=args.openai_endpoint,
+            api_key=args.openai_api_key,
+            deployment_name=args.openai_deployment,
+            model_name=args.openai_model,
+        )
+    else:
+        print("[*] OpenAI integration disabled. Provide --openai-endpoint and --openai-api-key to enable flow analysis.")
+
     navigator = DesktopNavigator(
         UIProvider(EXPLORER_SCRIPT, args.app),
         max_explores=args.max_explores,
+        analyzer=analyzer,
     )
     navigator.run_session()
