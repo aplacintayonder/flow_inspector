@@ -24,12 +24,37 @@ import argparse
 from pathlib import Path
 from flask import Flask, request, jsonify, render_template_string
 
+
+def load_dotenv_file(env_path: str = ".env"):
+    """Minimal .env loader so AZURE_OPENAI_* values can be used without extra deps."""
+    if not os.path.exists(env_path):
+        return
+
+    try:
+        with open(env_path, "r", encoding="utf-8") as f:
+            for raw_line in f:
+                line = raw_line.strip()
+                if not line or line.startswith("#") or "=" not in line:
+                    continue
+
+                key, value = line.split("=", 1)
+                key = key.strip()
+                value = value.strip().strip('"').strip("'")
+
+                if key and key not in os.environ:
+                    os.environ[key] = value
+    except OSError as e:
+        print(f"[-] Could not read .env file ({env_path}): {e}")
+
+
+load_dotenv_file(".env")
+
 # ---------------------------------------------------------------------------
 # CLI
 # ---------------------------------------------------------------------------
 parser = argparse.ArgumentParser(description="GabiBot Chat UI")
 parser.add_argument("--flow",  default="ai/flow.json",    help="Path to flow.json")
-parser.add_argument("--model", default="gpt-5",           help="OpenAI model to use")
+parser.add_argument("--model", default=os.getenv("AZURE_OPENAI_MODEL", "gpt-5"),           help="OpenAI model to use")
 parser.add_argument("--port",  default=5000,  type=int,   help="Port (default 5000)")
 args = parser.parse_args()
 
@@ -119,7 +144,29 @@ except ImportError:
     print("[-] openai not installed.  Run:  pip install openai", file=sys.stderr)
     sys.exit(1)
 
-client = OpenAI()   # reads OPENAI_API_KEY from environment
+endpoint = os.getenv("AZURE_OPENAI_ENDPOINT", "")
+api_key = os.getenv("AZURE_OPENAI_API_KEY", "")
+
+
+def _normalize_openai_base_url(raw_endpoint: str) -> str:
+    """Accept plain Azure endpoint and convert it to the OpenAI-compatible base URL."""
+    endpoint_clean = raw_endpoint.strip().rstrip("/")
+    if not endpoint_clean:
+        return endpoint_clean
+    if endpoint_clean.endswith("/openai/v1"):
+        return f"{endpoint_clean}/"
+    return f"{endpoint_clean}/openai/v1/"
+
+if endpoint and api_key:
+    base_url = _normalize_openai_base_url(endpoint)
+    client = OpenAI(base_url=base_url, api_key=api_key)
+    print(f"[*] Using custom Azure OpenAI endpoint: {base_url}")
+elif api_key:
+    client = OpenAI(api_key=api_key)
+    print(f"[*] Using custom API key from environment")
+else:
+    client = OpenAI()   # reads from OPENAI_API_KEY environment variable
+    print(f"[*] Using default OpenAI settings")
 
 # ---------------------------------------------------------------------------
 # Flask app
@@ -351,11 +398,24 @@ def chat_endpoint():
                 {"role": "system", "content": SYSTEM_CONTENT},
                 *_history,
             ],
-            max_tokens=1024,
         )
-        reply = response.choices[0].message.content.strip()
+        content = response.choices[0].message.content
+        if isinstance(content, str):
+            reply = content.strip()
+        elif isinstance(content, list):
+            text_chunks = []
+            for block in content:
+                if isinstance(block, dict) and block.get("type") == "text":
+                    text_chunks.append(block.get("text", ""))
+            reply = "\n".join(chunk.strip() for chunk in text_chunks if chunk and chunk.strip())
+        else:
+            reply = ""
+
+        if not reply:
+            reply = "I could not generate a text response for that request."
     except Exception as e:
-        return jsonify({"error": str(e)}), 500
+        print(f"[-] /chat failed: {type(e).__name__}: {e}", file=sys.stderr)
+        return jsonify({"error": f"{type(e).__name__}: {e}"}), 500
 
     _history.append({"role": "assistant", "content": reply})
     return jsonify({"reply": reply})
