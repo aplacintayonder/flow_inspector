@@ -1,0 +1,1070 @@
+[
+    {
+        "uuid": "32c602ec-f77c-47da-a4bc-d7cec2ce939b",
+        "type": "Button",
+        "name": "Minimize",
+        "highlight_color": "#c57640",
+        "coordinates": {
+            "left": 1749,
+            "top": 0,
+            "right": 1806,
+            "bottom": 50
+        }
+    },
+    {
+        "uuid": "69cb3883-2198-451a-8929-24727e31cd2a",
+        "type": "Button",
+        "name": "Restore",
+        "highlight_color": "#8db74d",
+        "coordinates": {
+            "left": 1805,
+            "top": 0,
+            "right": 1863,
+            "bottom": 50
+        }
+    },
+    {
+        "uuid": "d03906b3-ef50-48fd-a98e-1dfd06e9852b",
+        "type": "Button",
+        "name": "Close",
+        "highlight_color": "#5a5a17",
+        "coordinates": {
+            "left": 1863,
+            "top": 0,
+            "right": 1921,
+            "bottom": 50
+        }
+    },
+    {
+        "uuid": "af45ae1b-3240-47b2-b081-15a1cbeb6225",
+        "type": "Button",
+        "name": "Back",
+        "highlight_color": "#297c02",
+        "coordinates": {
+            "left": 0,
+            "top": 58,
+            "right": 43,
+            "bottom": 94
+        }
+    },
+    {
+        "uuid": "d35d4628-4529-4886-9408-fae7a278af7b",
+        "type": "Button",
+        "name": "Forward",
+        "highlight_color": "#cb45f0",
+        "coordinates": {
+            "left": 45,
+            "top": 58,
+            "right": 80,
+            "bottom": 94
+        }
+    },
+    {
+        "uuid": "176dbde8-3608-4767-a428-e052c588864a",
+        "type": "Button",
+        "name": "Reload",
+        "highlight_color": "#5cc51c",
+        "coordinates": {
+            "left": 83,
+            "top": 58,
+            "right": 119,
+            "bottom": 94
+        }
+    },
+    {
+        "uuid": "fc431768-7940-4d83-a51d-0b578f2a6ca0",
+        "type": "Button",
+        "name": "Bookmark this tab",
+        "highlight_color": "#939b27",
+        "coordinates": {
+            "left": 286,
+            "top": 58,
+            "right": 322,
+            "bottom": 94
+        }
+    },
+    {
+        "uuid": "06875e57-e1ed-4eea-8cb7-18f3f9cd4f67",
+        "type": "Document",
+        "name": "Search icon",
+        "highlight_color": "#f3afe4",
+        "coordinates": {
+            "left": 335,
+            "top": 58,
+            "right": 370,
+            "bottom": 94
+        }
+    },
+    {
+        "uuid": "54decbf8-aff4-49ed-b1fc-0009e912f1cd",
+        "type": "Edit",
+        "name": "Address and search bar",
+        "highlight_color": "#3aeaba",
+        "coordinates": {
+            "left": 380,
+            "top": 58,
+            "right": 1449,
+            "bottom": 94
+        }
+    },
+    {
+        "uuid": "9fc8336c-b41c-4850-a038-118f35188bc1",
+        "type": "Separator",
+        "name": "Separator",
+        "highlight_color": "#afb252",
+        "coordinates": {
+            "left": 1459,
+            "top": 65,
+            "right": 1469,
+            "bottom": 85
+        }
+    },
+    {
+        "uuid": "6ee53414-844c-41af-a210-c1499440645c",
+        "type": "Button",
+        "name": "Brave Shields",
+        "highlight_color": "#451ba5",
+        "coordinates": {
+            "left": 1468,
+            "top": 58,
+            "right": 1511,
+            "bottom": 94
+        }
+    },
+    {
+        "uuid": "c237907a-7763-48e7-a5f4-11887c260c3c",
+        "type": "Button",
+        "name": "Brave Rewards",
+        "highlight_color": "#73b288",
+        "coordinates": {
+            "left": 1510,
+            "top": 58,
+            "right": 1553,
+            "bottom": 94
+        }
+    },
+    {
+        "uuid": "c326f368-cb07-409b-a804-ca029e7e9669",
+        "type": "Button",
+        "name": "Tab search - pinned",
+        "highlight_color": "#51ebde",
+        "coordinates": {
+            "left": 1668,
+            "top": 58,
+            "right": 1704,
+            "bottom": 94
+        }
+    },
+    {
+        "uuid": "95b8c732-6f4b-4701-9a28-665b45b7e4ff",
+        "type": "Button",
+        "name": "Show sidebar",
+        "highlight_color": "#246351",
+        "coordinates": {
+            "left": 1728,
+            "top": 58,
+            "right": 1764,
+            "bottom": 94
+        }
+    },
+    {
+        "uuid": "b069f3f2-c7cd-4b3f-bbbe-aded77fbe5a6",
+        "type": "Button",
+        "name": "Brave Wallet",
+        "highlight_color": "#f38450",
+        "coordinates": {
+            "left": 1765,
+            "top": 58,
+            "right": 1800,
+            "bottom": 94
+        }
+    },
+    {
+        "uuid": "d66b70cb-b873-4322-8acf-2ce0d6410ecf",
+        "type": "Button",
+        "name": "Leo AI",
+        "highlight_color": "#c7b164",
+        "coordinates": {
+            "left": 1803,
+            "top": 58,
+            "right": 1839,
+            "bottom": 94
+        }
+    },
+    {
+        "uuid": "0b102821-2252-4f32-a1d0-c675ef990478",
+        "type": "Button",
+        "name": "VPN",
+        "highlight_color": "#f45def",
+        "coordinates": {
+            "left": 1840,
+            "top": 58,
+            "right": 1875,
+            "bottom": 94
+        }
+    },
+    {
+        "uuid": "84eb6aca-bdba-4aa4-ba04-5c090873f571",
+        "type": "Button",
+        "name": "Brave",
+        "highlight_color": "#ee7bb2",
+        "coordinates": {
+            "left": 1878,
+            "top": 58,
+            "right": 1921,
+            "bottom": 94
+        }
+    },
+    {
+        "uuid": "0b42215a-5c66-487c-ad4c-21daeb7447a8",
+        "type": "ToolBar",
+        "name": "Bookmarks",
+        "highlight_color": "#e33c75",
+        "coordinates": {
+            "left": 0,
+            "top": 100,
+            "right": 1920,
+            "bottom": 143
+        }
+    },
+    {
+        "uuid": "c3ce1407-b36b-4803-b7ea-540c2e883d20",
+        "type": "ToolBar",
+        "name": "Saved Tab Groups",
+        "highlight_color": "#891931",
+        "coordinates": {
+            "left": 8,
+            "top": 101,
+            "right": 54,
+            "bottom": 137
+        }
+    },
+    {
+        "uuid": "bae5b063-f089-4ea1-93ff-026310448df1",
+        "type": "Button",
+        "name": "Tab groups",
+        "highlight_color": "#ba20f5",
+        "coordinates": {
+            "left": 8,
+            "top": 101,
+            "right": 44,
+            "bottom": 137
+        }
+    },
+    {
+        "uuid": "1faeb234-58f3-4d27-9165-6147c7328107",
+        "type": "Button",
+        "name": "All Bookmarks",
+        "highlight_color": "#231174",
+        "coordinates": {
+            "left": 1768,
+            "top": 101,
+            "right": 1911,
+            "bottom": 137
+        }
+    },
+    {
+        "uuid": "e7419c15-a508-4d17-9feb-44bcc856e5df",
+        "type": "Separator",
+        "name": "Separator",
+        "highlight_color": "#0518cb",
+        "coordinates": {
+            "left": 1745,
+            "top": 109,
+            "right": 1768,
+            "bottom": 130
+        }
+    },
+    {
+        "uuid": "3f795285-2bf8-4fb2-98b1-d072f8223370",
+        "type": "Text",
+        "name": "For quick access, place your bookmarks here on the bookmarks bar.",
+        "highlight_color": "#912257",
+        "coordinates": {
+            "left": 73,
+            "top": 101,
+            "right": 523,
+            "bottom": 137
+        }
+    },
+    {
+        "uuid": "8b64af77-259b-4437-a156-51610eeb154e",
+        "type": "Hyperlink",
+        "name": "Import bookmarks now\u2026",
+        "highlight_color": "#db81ff",
+        "coordinates": {
+            "left": 526,
+            "top": 101,
+            "right": 693,
+            "bottom": 137
+        }
+    },
+    {
+        "uuid": "98b1310a-4b50-492e-9fe0-85224f9ba55f",
+        "type": "Document",
+        "name": "New Tab",
+        "highlight_color": "#fa7e80",
+        "coordinates": {
+            "left": 0,
+            "top": 144,
+            "right": 1920,
+            "bottom": 1021
+        }
+    },
+    {
+        "uuid": "9169db25-a4b1-4034-9839-90799d49b2ac",
+        "type": "Button",
+        "name": "N/A",
+        "highlight_color": "#44c7af",
+        "coordinates": {
+            "left": 30,
+            "top": 174,
+            "right": 50,
+            "bottom": 194
+        }
+    },
+    {
+        "uuid": "c47a7d6a-0060-4bf8-b662-e1e6fd03f4c1",
+        "type": "Button",
+        "name": "N/A",
+        "highlight_color": "#a6c79b",
+        "coordinates": {
+            "left": 1828,
+            "top": 174,
+            "right": 1871,
+            "bottom": 217
+        }
+    },
+    {
+        "uuid": "3a25cc46-8052-471c-8775-61ed87db9ff0",
+        "type": "Hyperlink",
+        "name": "Reddit",
+        "highlight_color": "#33be41",
+        "coordinates": {
+            "left": 635,
+            "top": 184,
+            "right": 726,
+            "bottom": 287
+        }
+    },
+    {
+        "uuid": "5831fdff-2901-4e1a-848e-1a57f26c3d83",
+        "type": "Hyperlink",
+        "name": "Notific\u0103ri",
+        "highlight_color": "#2459e4",
+        "coordinates": {
+            "left": 725,
+            "top": 184,
+            "right": 816,
+            "bottom": 287
+        }
+    },
+    {
+        "uuid": "60cb9384-6675-41ec-8472-0f3d043c1115",
+        "type": "Hyperlink",
+        "name": "Google Gemini",
+        "highlight_color": "#6196ed",
+        "coordinates": {
+            "left": 815,
+            "top": 184,
+            "right": 906,
+            "bottom": 287
+        }
+    },
+    {
+        "uuid": "85d40844-cc81-4e1d-81bf-f8b25214e5e8",
+        "type": "Hyperlink",
+        "name": "Google",
+        "highlight_color": "#8999c8",
+        "coordinates": {
+            "left": 905,
+            "top": 184,
+            "right": 996,
+            "bottom": 287
+        }
+    },
+    {
+        "uuid": "80f7a7d7-82ff-44e6-97e1-ee5986a6f0e9",
+        "type": "Hyperlink",
+        "name": "YouTube",
+        "highlight_color": "#2e98a1",
+        "coordinates": {
+            "left": 995,
+            "top": 184,
+            "right": 1086,
+            "bottom": 287
+        }
+    },
+    {
+        "uuid": "be06885c-7be0-4a83-84a8-59c562116f0d",
+        "type": "Hyperlink",
+        "name": "Layoffs Tracker",
+        "highlight_color": "#d69eb1",
+        "coordinates": {
+            "left": 1085,
+            "top": 184,
+            "right": 1176,
+            "bottom": 287
+        }
+    },
+    {
+        "uuid": "40c09d64-e6db-4047-8091-349eb6dabf0a",
+        "type": "Hyperlink",
+        "name": "(5) WhatsApp",
+        "highlight_color": "#9bbc07",
+        "coordinates": {
+            "left": 1175,
+            "top": 184,
+            "right": 1266,
+            "bottom": 287
+        }
+    },
+    {
+        "uuid": "44d8ff95-b028-4b33-9780-a2447ea53162",
+        "type": "Hyperlink",
+        "name": "ChatGPT",
+        "highlight_color": "#9e4e51",
+        "coordinates": {
+            "left": 1375,
+            "top": 184,
+            "right": 1466,
+            "bottom": 287
+        }
+    },
+    {
+        "uuid": "6b12d85c-add2-44db-a8a9-9c15133e2089",
+        "type": "Hyperlink",
+        "name": "adrian-placinta (Adrian Placinta) \u00b7 GitHub",
+        "highlight_color": "#c5e7ac",
+        "coordinates": {
+            "left": 1465,
+            "top": 184,
+            "right": 1556,
+            "bottom": 287
+        }
+    },
+    {
+        "uuid": "418fecd7-7400-4a7f-a952-b995b41f8010",
+        "type": "Hyperlink",
+        "name": "Sign in",
+        "highlight_color": "#8d3611",
+        "coordinates": {
+            "left": 1555,
+            "top": 184,
+            "right": 1646,
+            "bottom": 287
+        }
+    },
+    {
+        "uuid": "788fb626-6362-43d1-aff2-2c414e996e67",
+        "type": "Hyperlink",
+        "name": "GitHub \u00b7 Change is constant. GitHub keeps you ahead. \u00b7 GitHub",
+        "highlight_color": "#cbe6b3",
+        "coordinates": {
+            "left": 1645,
+            "top": 184,
+            "right": 1736,
+            "bottom": 287
+        }
+    },
+    {
+        "uuid": "d5655e12-62e1-4f64-b316-b8342bf02091",
+        "type": "Hyperlink",
+        "name": "Yonder Intranet",
+        "highlight_color": "#b74a27",
+        "coordinates": {
+            "left": 1735,
+            "top": 184,
+            "right": 1826,
+            "bottom": 287
+        }
+    },
+    {
+        "uuid": "d9d5d644-0eef-45e9-b311-74a628b6a59e",
+        "type": "Group",
+        "name": "Pagination",
+        "highlight_color": "#b6e746",
+        "coordinates": {
+            "left": 635,
+            "top": 306,
+            "right": 1266,
+            "bottom": 319
+        }
+    },
+    {
+        "uuid": "19d903e6-8c59-4859-b60c-31a82d0f037c",
+        "type": "ListItem",
+        "name": "N/A",
+        "highlight_color": "#f2cb59",
+        "coordinates": {
+            "left": 934,
+            "top": 306,
+            "right": 945,
+            "bottom": 319
+        }
+    },
+    {
+        "uuid": "4797fb60-838c-4501-aa35-8c4e4b74b14a",
+        "type": "Button",
+        "name": "Page 1",
+        "highlight_color": "#8cfb7f",
+        "coordinates": {
+            "left": 934,
+            "top": 307,
+            "right": 945,
+            "bottom": 318
+        }
+    },
+    {
+        "uuid": "fa6bc78b-d7e9-4d62-8d98-19c104bc9262",
+        "type": "ListItem",
+        "name": "N/A",
+        "highlight_color": "#e57848",
+        "coordinates": {
+            "left": 956,
+            "top": 306,
+            "right": 967,
+            "bottom": 319
+        }
+    },
+    {
+        "uuid": "bc3af15a-d269-48ee-a59e-d7bc7c25ea93",
+        "type": "Button",
+        "name": "Page 2",
+        "highlight_color": "#7da2ec",
+        "coordinates": {
+            "left": 956,
+            "top": 307,
+            "right": 967,
+            "bottom": 318
+        }
+    },
+    {
+        "uuid": "93dce2d5-39d9-4923-8eaa-20e5fa9d10dc",
+        "type": "Edit",
+        "name": "Ask anything, find anything\u2026",
+        "highlight_color": "#0a4679",
+        "coordinates": {
+            "left": 748,
+            "top": 375,
+            "right": 1151,
+            "bottom": 403
+        }
+    },
+    {
+        "uuid": "5f984150-cf4d-41d1-baba-41faccf5b831",
+        "type": "Button",
+        "name": "N/A",
+        "highlight_color": "#3c9f32",
+        "coordinates": {
+            "left": 700,
+            "top": 370,
+            "right": 738,
+            "bottom": 408
+        }
+    },
+    {
+        "uuid": "695b2d57-db3c-4dc4-9758-c4689ac9f5ce",
+        "type": "Button",
+        "name": "N/A",
+        "highlight_color": "#f4637c",
+        "coordinates": {
+            "left": 709,
+            "top": 379,
+            "right": 730,
+            "bottom": 399
+        }
+    },
+    {
+        "uuid": "0e6cb31a-2827-4d12-9a46-1987b6daff93",
+        "type": "Hyperlink",
+        "name": "N/A",
+        "highlight_color": "#923823",
+        "coordinates": {
+            "left": 30,
+            "top": 439,
+            "right": 1871,
+            "bottom": 821
+        }
+    },
+    {
+        "uuid": "b9a84981-a6fd-44da-b7e6-c226354cb43d",
+        "type": "Hyperlink",
+        "name": "General Assembly: The Skills That Actually Matter Now",
+        "highlight_color": "#c6821a",
+        "coordinates": {
+            "left": 30,
+            "top": 581,
+            "right": 243,
+            "bottom": 821
+        }
+    },
+    {
+        "uuid": "8bcc7ecc-30eb-4193-9269-db5b9646bf6f",
+        "type": "Image",
+        "name": "General Assembly: The Skills That Actually Matter Now",
+        "highlight_color": "#2fe833",
+        "coordinates": {
+            "left": 30,
+            "top": 608,
+            "right": 243,
+            "bottom": 821
+        }
+    },
+    {
+        "uuid": "fa8871c2-dcc8-4c00-91c7-e646ab09e7ee",
+        "type": "Button",
+        "name": "N/A",
+        "highlight_color": "#9391b4",
+        "coordinates": {
+            "left": 582,
+            "top": 856,
+            "right": 616,
+            "bottom": 890
+        }
+    },
+    {
+        "uuid": "d63a8293-e400-441a-a6e6-65318edc8578",
+        "type": "Button",
+        "name": "N/A",
+        "highlight_color": "#a633fc",
+        "coordinates": {
+            "left": 587,
+            "top": 861,
+            "right": 611,
+            "bottom": 884
+        }
+    },
+    {
+        "uuid": "976e5f3c-217d-4ad2-a0f4-6132cfd66ef1",
+        "type": "Text",
+        "name": "STATS",
+        "highlight_color": "#4d41b1",
+        "coordinates": {
+            "left": 50,
+            "top": 862,
+            "right": 91,
+            "bottom": 882
+        }
+    },
+    {
+        "uuid": "b2a5b6ee-6ced-4181-9741-52c5faad6351",
+        "type": "Text",
+        "name": "49,805",
+        "highlight_color": "#cd6f4b",
+        "coordinates": {
+            "left": 50,
+            "top": 910,
+            "right": 127,
+            "bottom": 943
+        }
+    },
+    {
+        "uuid": "6ce2c3ee-02dd-41e6-b03d-a95581ace2bc",
+        "type": "Text",
+        "name": "Trackers & ads blocked",
+        "highlight_color": "#60f21d",
+        "coordinates": {
+            "left": 50,
+            "top": 944,
+            "right": 190,
+            "bottom": 963
+        }
+    },
+    {
+        "uuid": "8798f3ab-923b-46f8-ab27-0d77c51971ef",
+        "type": "Text",
+        "name": "1",
+        "highlight_color": "#7d6cec",
+        "coordinates": {
+            "left": 298,
+            "top": 910,
+            "right": 309,
+            "bottom": 943
+        }
+    },
+    {
+        "uuid": "65abb6a3-766b-4537-90d2-03a22659cec9",
+        "type": "Text",
+        "name": ".",
+        "highlight_color": "#c75ffc",
+        "coordinates": {
+            "left": 308,
+            "top": 910,
+            "right": 316,
+            "bottom": 943
+        }
+    },
+    {
+        "uuid": "7302a3f5-2b46-4ed9-8a4f-54519db31618",
+        "type": "Text",
+        "name": "38",
+        "highlight_color": "#493838",
+        "coordinates": {
+            "left": 315,
+            "top": 910,
+            "right": 343,
+            "bottom": 943
+        }
+    },
+    {
+        "uuid": "1c892135-3e78-49ae-b311-45356b5dd050",
+        "type": "Text",
+        "name": "GB",
+        "highlight_color": "#cea3eb",
+        "coordinates": {
+            "left": 349,
+            "top": 918,
+            "right": 373,
+            "bottom": 941
+        }
+    },
+    {
+        "uuid": "8e6d4227-17db-47f3-a96a-2c2c26ad0eba",
+        "type": "Text",
+        "name": "Bandwidth saved",
+        "highlight_color": "#04b0df",
+        "coordinates": {
+            "left": 298,
+            "top": 944,
+            "right": 402,
+            "bottom": 963
+        }
+    },
+    {
+        "uuid": "4aa313b6-2244-4133-a9d0-3b228ef90be5",
+        "type": "Text",
+        "name": "42",
+        "highlight_color": "#72b558",
+        "coordinates": {
+            "left": 510,
+            "top": 910,
+            "right": 540,
+            "bottom": 943
+        }
+    },
+    {
+        "uuid": "4ee2c701-a780-407b-9199-89ff20838ac1",
+        "type": "Text",
+        "name": "Minutes",
+        "highlight_color": "#0ca44c",
+        "coordinates": {
+            "left": 546,
+            "top": 918,
+            "right": 611,
+            "bottom": 941
+        }
+    },
+    {
+        "uuid": "8e00234f-cae2-48b0-a93b-c40d4b24371e",
+        "type": "Text",
+        "name": "Time saved",
+        "highlight_color": "#d28863",
+        "coordinates": {
+            "left": 510,
+            "top": 944,
+            "right": 579,
+            "bottom": 963
+        }
+    },
+    {
+        "uuid": "c5aa99b7-33b9-43ba-b442-ade3a2a52baa",
+        "type": "Button",
+        "name": "N/A",
+        "highlight_color": "#86c7e6",
+        "coordinates": {
+            "left": 1203,
+            "top": 856,
+            "right": 1236,
+            "bottom": 890
+        }
+    },
+    {
+        "uuid": "726ab9a9-9a15-4607-b522-f15bdfb17f91",
+        "type": "Button",
+        "name": "N/A",
+        "highlight_color": "#68f259",
+        "coordinates": {
+            "left": 1208,
+            "top": 861,
+            "right": 1231,
+            "bottom": 884
+        }
+    },
+    {
+        "uuid": "4ec0c7e1-283b-4985-a103-40e731fe7f4f",
+        "type": "Text",
+        "name": "NEWS",
+        "highlight_color": "#ddc3d4",
+        "coordinates": {
+            "left": 670,
+            "top": 862,
+            "right": 713,
+            "bottom": 882
+        }
+    },
+    {
+        "uuid": "91dfdd9f-6a1a-4fe8-a0dd-280f9f398977",
+        "type": "Text",
+        "name": "Turn on Brave News, and never miss a story",
+        "highlight_color": "#8a176b",
+        "coordinates": {
+            "left": 741,
+            "top": 895,
+            "right": 988,
+            "bottom": 946
+        }
+    },
+    {
+        "uuid": "8f0ac39d-6456-417d-961f-4053177151dc",
+        "type": "Button",
+        "name": "Turn on Brave News",
+        "highlight_color": "#dd43fb",
+        "coordinates": {
+            "left": 1045,
+            "top": 898,
+            "right": 1221,
+            "bottom": 944
+        }
+    },
+    {
+        "uuid": "38f4afd6-8b47-48d7-9892-f017508f1c24",
+        "type": "Button",
+        "name": "N/A",
+        "highlight_color": "#d95015",
+        "coordinates": {
+            "left": 1270,
+            "top": 841,
+            "right": 1331,
+            "bottom": 895
+        }
+    },
+    {
+        "uuid": "46938c3d-dda5-4c02-a9d8-8d413c560ae4",
+        "type": "Button",
+        "name": "N/A",
+        "highlight_color": "#4ed74c",
+        "coordinates": {
+            "left": 1270,
+            "top": 894,
+            "right": 1331,
+            "bottom": 948
+        }
+    },
+    {
+        "uuid": "9e004568-f956-4c8d-8bf3-2ea6737631b3",
+        "type": "Button",
+        "name": "N/A",
+        "highlight_color": "#9476d8",
+        "coordinates": {
+            "left": 1270,
+            "top": 947,
+            "right": 1331,
+            "bottom": 1001
+        }
+    },
+    {
+        "uuid": "dc23514e-a513-4326-8a61-331fe0b58b3d",
+        "type": "Button",
+        "name": "N/A",
+        "highlight_color": "#fc362d",
+        "coordinates": {
+            "left": 1823,
+            "top": 856,
+            "right": 1856,
+            "bottom": 890
+        }
+    },
+    {
+        "uuid": "030a6e69-110c-43f7-b480-74cae1f258e8",
+        "type": "Button",
+        "name": "N/A",
+        "highlight_color": "#259a0a",
+        "coordinates": {
+            "left": 1828,
+            "top": 861,
+            "right": 1851,
+            "bottom": 884
+        }
+    },
+    {
+        "uuid": "286aed85-685e-44ed-9c70-f30f951752ec",
+        "type": "Text",
+        "name": "BRAVE VPN",
+        "highlight_color": "#e8f3f5",
+        "coordinates": {
+            "left": 1380,
+            "top": 862,
+            "right": 1460,
+            "bottom": 882
+        }
+    },
+    {
+        "uuid": "5d76a21e-c3fd-4f81-969a-46d60660bb1a",
+        "type": "Text",
+        "name": "Powered by",
+        "highlight_color": "#bbecd6",
+        "coordinates": {
+            "left": 1479,
+            "top": 863,
+            "right": 1551,
+            "bottom": 882
+        }
+    },
+    {
+        "uuid": "56a44240-20de-44ba-87d0-16948737ba12",
+        "type": "Text",
+        "name": "Extra privacy & security online",
+        "highlight_color": "#4f261b",
+        "coordinates": {
+            "left": 1375,
+            "top": 894,
+            "right": 1559,
+            "bottom": 913
+        }
+    },
+    {
+        "uuid": "c189a698-d8a8-49b1-9488-a46ce054c6d1",
+        "type": "Text",
+        "name": "Hide your IP & change your location",
+        "highlight_color": "#beb879",
+        "coordinates": {
+            "left": 1375,
+            "top": 919,
+            "right": 1597,
+            "bottom": 938
+        }
+    },
+    {
+        "uuid": "4ce7f274-98f0-4c7a-b788-960e0a1f3b99",
+        "type": "Text",
+        "name": "Protect every app on your device",
+        "highlight_color": "#9c6fe7",
+        "coordinates": {
+            "left": 1375,
+            "top": 944,
+            "right": 1576,
+            "bottom": 963
+        }
+    },
+    {
+        "uuid": "4d9e43f2-54a8-441a-81ca-fc4b3e141259",
+        "type": "Button",
+        "name": "Start free trial",
+        "highlight_color": "#34f3e6",
+        "coordinates": {
+            "left": 1717,
+            "top": 893,
+            "right": 1851,
+            "bottom": 939
+        }
+    },
+    {
+        "uuid": "139ff38d-0933-4be5-b28b-d9f077e92bde",
+        "type": "Button",
+        "name": "Already purchased?",
+        "highlight_color": "#6c248f",
+        "coordinates": {
+            "left": 1724,
+            "top": 943,
+            "right": 1844,
+            "bottom": 964
+        }
+    },
+    {
+        "uuid": "af99e3ea-76a1-4775-863b-56e3aa99b729",
+        "type": "TabItem",
+        "name": "Google Gemini",
+        "highlight_color": "#679bf1",
+        "coordinates": {
+            "left": 0,
+            "top": 0,
+            "right": 279,
+            "bottom": 52
+        }
+    },
+    {
+        "uuid": "706308a0-9a37-462c-9b40-e19bbeec9d66",
+        "type": "TabItem",
+        "name": "Google - My Activity",
+        "highlight_color": "#f8c217",
+        "coordinates": {
+            "left": 276,
+            "top": 0,
+            "right": 555,
+            "bottom": 52
+        }
+    },
+    {
+        "uuid": "d0d66d25-a4cc-4c45-a0f8-6b3e13f009d5",
+        "type": "TabItem",
+        "name": "Google - My Activity",
+        "highlight_color": "#edebbe",
+        "coordinates": {
+            "left": 553,
+            "top": 0,
+            "right": 833,
+            "bottom": 52
+        }
+    },
+    {
+        "uuid": "4cc04928-8fff-4857-9520-1eeb45b032da",
+        "type": "TabItem",
+        "name": "Lista de verificare a Contului t\u0103u Google - Android - Cont Google Ajutor",
+        "highlight_color": "#ff9774",
+        "coordinates": {
+            "left": 829,
+            "top": 0,
+            "right": 1108,
+            "bottom": 52
+        }
+    },
+    {
+        "uuid": "4c4cd82a-891a-4be8-b792-c5661e419139",
+        "type": "TabItem",
+        "name": "Google One Plans",
+        "highlight_color": "#cfaefd",
+        "coordinates": {
+            "left": 1104,
+            "top": 0,
+            "right": 1383,
+            "bottom": 52
+        }
+    },
+    {
+        "uuid": "1a9184ca-3bb7-4eb6-913e-bb34bd3edde3",
+        "type": "TabItem",
+        "name": "New Tab",
+        "highlight_color": "#b70209",
+        "coordinates": {
+            "left": 1379,
+            "top": 0,
+            "right": 1658,
+            "bottom": 52
+        }
+    },
+    {
+        "uuid": "bfe8616c-d5e2-4ea7-882d-5846c4d182bd",
+        "type": "Button",
+        "name": "Close",
+        "highlight_color": "#7d07b6",
+        "coordinates": {
+            "left": 1615,
+            "top": 8,
+            "right": 1650,
+            "bottom": 44
+        }
+    },
+    {
+        "uuid": "9a0d73d3-0a48-4d1b-8a16-26d2a2a0b39d",
+        "type": "Button",
+        "name": "New Tab",
+        "highlight_color": "#032d47",
+        "coordinates": {
+            "left": 1661,
+            "top": 0,
+            "right": 1697,
+            "bottom": 52
+        }
+    }
+]

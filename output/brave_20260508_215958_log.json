@@ -1,0 +1,26 @@
+{
+    "scan_id": "20260508_215958",
+    "app": "Brave",
+    "timestamp": "2026-05-08T21:59:58.607609",
+    "image_path": "output\\brave_20260508_215958.png",
+    "json_path": "output\\brave_20260508_215958.json",
+    "trigger": {
+        "type": "Edit",
+        "name": "Address and search bar",
+        "action": "type"
+    },
+    "element_count": 93,
+    "interactions": [
+        {
+            "type": "Button",
+            "name": "Edit bookmark for this tab",
+            "action": "click",
+            "coordinates": {
+                "left": 286,
+                "top": 58,
+                "right": 322,
+                "bottom": 94
+            }
+        }
+    ]
+}

@@ -1,0 +1,2 @@
+output\brave_20260508_215958.json
+output\brave_20260508_215958.png

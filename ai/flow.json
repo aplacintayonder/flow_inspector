@@ -1,0 +1,139 @@
+{
+    "app": "Brave",
+    "session_date": "2026-05-08T22:00:03.627687",
+    "total_unique_screens": 5,
+    "screens": [
+        {
+            "screen_index": 1,
+            "scan_id": "20260508_215926",
+            "timestamp": "2026-05-08T21:59:26.637471",
+            "image": "ai\\screen_001.png",
+            "trigger": null,
+            "element_count": 54,
+            "interactions_performed": [
+                {
+                    "type": "Button",
+                    "name": "Back",
+                    "action": "click",
+                    "coordinates": {
+                        "left": 0,
+                        "top": 58,
+                        "right": 43,
+                        "bottom": 94
+                    }
+                }
+            ]
+        },
+        {
+            "screen_index": 2,
+            "scan_id": "20260508_215933",
+            "timestamp": "2026-05-08T21:59:33.914412",
+            "image": "ai\\screen_002.png",
+            "trigger": {
+                "type": "Button",
+                "name": "Back",
+                "action": "click"
+            },
+            "element_count": 87,
+            "interactions_performed": [
+                {
+                    "type": "Button",
+                    "name": "Forward",
+                    "action": "click",
+                    "coordinates": {
+                        "left": 45,
+                        "top": 58,
+                        "right": 80,
+                        "bottom": 94
+                    }
+                }
+            ]
+        },
+        {
+            "screen_index": 3,
+            "scan_id": "20260508_215940",
+            "timestamp": "2026-05-08T21:59:41.195130",
+            "image": "ai\\screen_003.png",
+            "trigger": {
+                "type": "Button",
+                "name": "Forward",
+                "action": "click"
+            },
+            "element_count": 89,
+            "interactions_performed": [
+                {
+                    "type": "Button",
+                    "name": "Reload",
+                    "action": "click",
+                    "coordinates": {
+                        "left": 83,
+                        "top": 58,
+                        "right": 119,
+                        "bottom": 94
+                    }
+                }
+            ]
+        },
+        {
+            "screen_index": 4,
+            "scan_id": "20260508_215948",
+            "timestamp": "2026-05-08T21:59:48.501253",
+            "image": "ai\\screen_004.png",
+            "trigger": {
+                "type": "Button",
+                "name": "Reload",
+                "action": "click"
+            },
+            "element_count": 87,
+            "interactions_performed": [
+                {
+                    "type": "Button",
+                    "name": "Bookmark this tab",
+                    "action": "click",
+                    "coordinates": {
+                        "left": 286,
+                        "top": 58,
+                        "right": 322,
+                        "bottom": 94
+                    }
+                },
+                {
+                    "type": "Edit",
+                    "name": "Address and search bar",
+                    "action": "type",
+                    "coordinates": {
+                        "left": 380,
+                        "top": 58,
+                        "right": 1449,
+                        "bottom": 94
+                    }
+                }
+            ]
+        },
+        {
+            "screen_index": 5,
+            "scan_id": "20260508_215958",
+            "timestamp": "2026-05-08T21:59:58.607609",
+            "image": "ai\\screen_005.png",
+            "trigger": {
+                "type": "Edit",
+                "name": "Address and search bar",
+                "action": "type"
+            },
+            "element_count": 93,
+            "interactions_performed": [
+                {
+                    "type": "Button",
+                    "name": "Edit bookmark for this tab",
+                    "action": "click",
+                    "coordinates": {
+                        "left": 286,
+                        "top": 58,
+                        "right": 322,
+                        "bottom": 94
+                    }
+                }
+            ]
+        }
+    ]
+}

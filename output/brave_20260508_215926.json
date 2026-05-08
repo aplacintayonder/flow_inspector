@@ -1,0 +1,650 @@
+[
+    {
+        "uuid": "0fb23a5f-86d1-432c-aff8-5c7ab7f2e590",
+        "type": "Button",
+        "name": "Minimize",
+        "highlight_color": "#a8f3b7",
+        "coordinates": {
+            "left": 1749,
+            "top": 0,
+            "right": 1806,
+            "bottom": 50
+        }
+    },
+    {
+        "uuid": "10b8542b-48d5-4432-9ec6-be90ff193973",
+        "type": "Button",
+        "name": "Restore",
+        "highlight_color": "#5681fa",
+        "coordinates": {
+            "left": 1805,
+            "top": 0,
+            "right": 1863,
+            "bottom": 50
+        }
+    },
+    {
+        "uuid": "e270ff69-d7bf-4d5e-b1b6-9d886ac96e72",
+        "type": "Button",
+        "name": "Close",
+        "highlight_color": "#194e96",
+        "coordinates": {
+            "left": 1863,
+            "top": 0,
+            "right": 1921,
+            "bottom": 50
+        }
+    },
+    {
+        "uuid": "bb513aaa-07a5-42ef-9733-c6fbe7b41d2c",
+        "type": "Button",
+        "name": "Back",
+        "highlight_color": "#243ee4",
+        "coordinates": {
+            "left": 0,
+            "top": 58,
+            "right": 43,
+            "bottom": 94
+        }
+    },
+    {
+        "uuid": "5334f763-f7a3-415f-9efa-1e320f3e4468",
+        "type": "Button",
+        "name": "Forward",
+        "highlight_color": "#a1ccf2",
+        "coordinates": {
+            "left": 45,
+            "top": 58,
+            "right": 80,
+            "bottom": 94
+        }
+    },
+    {
+        "uuid": "46c18355-ee59-4afd-a26b-7f8114a9281a",
+        "type": "Button",
+        "name": "Reload",
+        "highlight_color": "#2ed3eb",
+        "coordinates": {
+            "left": 83,
+            "top": 58,
+            "right": 119,
+            "bottom": 94
+        }
+    },
+    {
+        "uuid": "62efe956-dd64-4eb9-ac74-e205896d953e",
+        "type": "Button",
+        "name": "Bookmark this tab",
+        "highlight_color": "#c109ec",
+        "coordinates": {
+            "left": 286,
+            "top": 58,
+            "right": 322,
+            "bottom": 94
+        }
+    },
+    {
+        "uuid": "db4ce1d9-cd34-4228-bb29-86c14749de12",
+        "type": "Button",
+        "name": "View site information",
+        "highlight_color": "#6aa1c6",
+        "coordinates": {
+            "left": 335,
+            "top": 58,
+            "right": 370,
+            "bottom": 94
+        }
+    },
+    {
+        "uuid": "8cde9033-aec6-471f-9343-ab86ef6f6e69",
+        "type": "Edit",
+        "name": "Address and search bar",
+        "highlight_color": "#b4238e",
+        "coordinates": {
+            "left": 380,
+            "top": 58,
+            "right": 1374,
+            "bottom": 94
+        }
+    },
+    {
+        "uuid": "b2e6fda5-3241-4a58-a8bb-48a2f5a91209",
+        "type": "Button",
+        "name": "Install GitHub",
+        "highlight_color": "#a77f75",
+        "coordinates": {
+            "left": 1384,
+            "top": 58,
+            "right": 1418,
+            "bottom": 94
+        }
+    },
+    {
+        "uuid": "bc46988a-e7bc-4da3-87fc-d45eb7a4bbb2",
+        "type": "Button",
+        "name": "Share this page",
+        "highlight_color": "#ab942a",
+        "coordinates": {
+            "left": 1426,
+            "top": 58,
+            "right": 1459,
+            "bottom": 94
+        }
+    },
+    {
+        "uuid": "63ad54a8-8aab-4bc9-b4c0-8927af39632d",
+        "type": "Separator",
+        "name": "Separator",
+        "highlight_color": "#d6cdf6",
+        "coordinates": {
+            "left": 1459,
+            "top": 65,
+            "right": 1469,
+            "bottom": 85
+        }
+    },
+    {
+        "uuid": "0e567dd0-aca4-46d7-a5e9-388073ec7f7a",
+        "type": "Button",
+        "name": "Brave Shields",
+        "highlight_color": "#a5ff20",
+        "coordinates": {
+            "left": 1468,
+            "top": 58,
+            "right": 1511,
+            "bottom": 94
+        }
+    },
+    {
+        "uuid": "38677773-ed19-4e93-a848-84f59ab3ff64",
+        "type": "Button",
+        "name": "Brave Rewards",
+        "highlight_color": "#7803b8",
+        "coordinates": {
+            "left": 1510,
+            "top": 58,
+            "right": 1553,
+            "bottom": 94
+        }
+    },
+    {
+        "uuid": "b78cdc71-7750-4743-8d56-731c35b98fe2",
+        "type": "Button",
+        "name": "Tab search - pinned",
+        "highlight_color": "#fa25a5",
+        "coordinates": {
+            "left": 1668,
+            "top": 58,
+            "right": 1704,
+            "bottom": 94
+        }
+    },
+    {
+        "uuid": "85e4bea7-6f75-4dbc-97da-97a9558a1fe3",
+        "type": "Button",
+        "name": "Show sidebar",
+        "highlight_color": "#59d0ae",
+        "coordinates": {
+            "left": 1728,
+            "top": 58,
+            "right": 1764,
+            "bottom": 94
+        }
+    },
+    {
+        "uuid": "2d7aab76-b4d2-40cd-b429-84ef7e9e379a",
+        "type": "Button",
+        "name": "Brave Wallet",
+        "highlight_color": "#d3ace3",
+        "coordinates": {
+            "left": 1765,
+            "top": 58,
+            "right": 1800,
+            "bottom": 94
+        }
+    },
+    {
+        "uuid": "d7402c93-5a51-42bc-8ebc-a148a921f0e6",
+        "type": "Button",
+        "name": "Leo AI",
+        "highlight_color": "#66574e",
+        "coordinates": {
+            "left": 1803,
+            "top": 58,
+            "right": 1839,
+            "bottom": 94
+        }
+    },
+    {
+        "uuid": "ac130811-d112-4bdf-ad88-f41bfe75d503",
+        "type": "Button",
+        "name": "VPN",
+        "highlight_color": "#f19d14",
+        "coordinates": {
+            "left": 1840,
+            "top": 58,
+            "right": 1875,
+            "bottom": 94
+        }
+    },
+    {
+        "uuid": "faa8c0ce-b168-4c86-8510-24ed3e97ba88",
+        "type": "Button",
+        "name": "Brave",
+        "highlight_color": "#26c32f",
+        "coordinates": {
+            "left": 1878,
+            "top": 58,
+            "right": 1921,
+            "bottom": 94
+        }
+    },
+    {
+        "uuid": "e44fe492-82c2-4b37-a616-1b182b557707",
+        "type": "Document",
+        "name": "Sign in to GitHub \u00b7 GitHub",
+        "highlight_color": "#199ef4",
+        "coordinates": {
+            "left": 0,
+            "top": 101,
+            "right": 1920,
+            "bottom": 1020
+        }
+    },
+    {
+        "uuid": "a727b7f9-3c90-4120-9ad8-a34ba72f5ce4",
+        "type": "Text",
+        "name": "Sign in to GitHub",
+        "highlight_color": "#53bca9",
+        "coordinates": {
+            "left": 861,
+            "top": 236,
+            "right": 1059,
+            "bottom": 274
+        }
+    },
+    {
+        "uuid": "4e149d3c-83d2-4432-8817-142ab85b333b",
+        "type": "Text",
+        "name": "Username or email address",
+        "highlight_color": "#578c5a",
+        "coordinates": {
+            "left": 740,
+            "top": 304,
+            "right": 956,
+            "bottom": 328
+        }
+    },
+    {
+        "uuid": "63605789-80e6-400e-8530-d9518fcce298",
+        "type": "Edit",
+        "name": "Username or email address",
+        "highlight_color": "#3f5b95",
+        "coordinates": {
+            "left": 740,
+            "top": 334,
+            "right": 1180,
+            "bottom": 385
+        }
+    },
+    {
+        "uuid": "644ed160-1a34-44bc-95b4-c3541b630c0e",
+        "type": "Text",
+        "name": "Password",
+        "highlight_color": "#55c2ae",
+        "coordinates": {
+            "left": 740,
+            "top": 405,
+            "right": 815,
+            "bottom": 429
+        }
+    },
+    {
+        "uuid": "1b22ce96-c0f4-4623-93ef-7582e6d04b31",
+        "type": "Edit",
+        "name": "Password",
+        "highlight_color": "#072a8c",
+        "coordinates": {
+            "left": 740,
+            "top": 436,
+            "right": 1180,
+            "bottom": 486
+        }
+    },
+    {
+        "uuid": "eec4c68d-5ffb-4835-bb08-20721de03721",
+        "type": "Hyperlink",
+        "name": "Forgot password?",
+        "highlight_color": "#7deb54",
+        "coordinates": {
+            "left": 1042,
+            "top": 404,
+            "right": 1180,
+            "bottom": 431
+        }
+    },
+    {
+        "uuid": "5e57f3cf-353c-4457-8d20-94ae53aa0152",
+        "type": "Button",
+        "name": "Sign in",
+        "highlight_color": "#24c73a",
+        "coordinates": {
+            "left": 740,
+            "top": 506,
+            "right": 1180,
+            "bottom": 556
+        }
+    },
+    {
+        "uuid": "5d8d6c66-7f3c-47be-891d-c4fe944663e9",
+        "type": "Text",
+        "name": "or",
+        "highlight_color": "#49d3b5",
+        "coordinates": {
+            "left": 951,
+            "top": 582,
+            "right": 969,
+            "bottom": 605
+        }
+    },
+    {
+        "uuid": "399b5c48-5252-49d2-a6f3-b55322332299",
+        "type": "Button",
+        "name": "Continue with Google",
+        "highlight_color": "#a84cbb",
+        "coordinates": {
+            "left": 740,
+            "top": 632,
+            "right": 1180,
+            "bottom": 683
+        }
+    },
+    {
+        "uuid": "84bdf4b6-5280-4f88-a840-8ea3e0b971b6",
+        "type": "Button",
+        "name": "Continue with Apple",
+        "highlight_color": "#2dae6e",
+        "coordinates": {
+            "left": 740,
+            "top": 692,
+            "right": 1180,
+            "bottom": 743
+        }
+    },
+    {
+        "uuid": "6867d919-33b5-4f85-a14d-c8be4c25937c",
+        "type": "Text",
+        "name": "New to GitHub? ",
+        "highlight_color": "#9023a4",
+        "coordinates": {
+            "left": 826,
+            "top": 768,
+            "right": 955,
+            "bottom": 792
+        }
+    },
+    {
+        "uuid": "03c44128-8f09-4434-87b9-424cf6344703",
+        "type": "Hyperlink",
+        "name": "Create an account",
+        "highlight_color": "#3c0dab",
+        "coordinates": {
+            "left": 954,
+            "top": 768,
+            "right": 1094,
+            "bottom": 792
+        }
+    },
+    {
+        "uuid": "85095b08-2de1-4511-85d2-e2d003d7c5fa",
+        "type": "Button",
+        "name": "Sign in with a passkey",
+        "highlight_color": "#b3a665",
+        "coordinates": {
+            "left": 873,
+            "top": 813,
+            "right": 1047,
+            "bottom": 840
+        }
+    },
+    {
+        "uuid": "3bb7cbe8-6897-430f-a4fd-2f3972b3dc64",
+        "type": "ListItem",
+        "name": "Terms",
+        "highlight_color": "#f44047",
+        "coordinates": {
+            "left": 521,
+            "top": 977,
+            "right": 561,
+            "bottom": 1000
+        }
+    },
+    {
+        "uuid": "7d41b4dc-e288-4fd6-920b-5df89522f66f",
+        "type": "Hyperlink",
+        "name": "Terms",
+        "highlight_color": "#ff095d",
+        "coordinates": {
+            "left": 521,
+            "top": 978,
+            "right": 561,
+            "bottom": 999
+        }
+    },
+    {
+        "uuid": "db60fb45-e89d-401f-9b00-291dad0fd4d2",
+        "type": "ListItem",
+        "name": "Privacy",
+        "highlight_color": "#db5f37",
+        "coordinates": {
+            "left": 600,
+            "top": 977,
+            "right": 647,
+            "bottom": 1000
+        }
+    },
+    {
+        "uuid": "bcd53404-0a6e-41de-b995-e64d86174c3c",
+        "type": "Hyperlink",
+        "name": "Privacy",
+        "highlight_color": "#c25239",
+        "coordinates": {
+            "left": 600,
+            "top": 978,
+            "right": 647,
+            "bottom": 999
+        }
+    },
+    {
+        "uuid": "663dd9dc-1bef-4a81-842c-cccece4459c3",
+        "type": "ListItem",
+        "name": "Docs",
+        "highlight_color": "#216538",
+        "coordinates": {
+            "left": 686,
+            "top": 977,
+            "right": 720,
+            "bottom": 1000
+        }
+    },
+    {
+        "uuid": "4c2b9030-4aef-4da2-81ff-ef36c2bd2a7f",
+        "type": "Hyperlink",
+        "name": "Docs",
+        "highlight_color": "#9c23e9",
+        "coordinates": {
+            "left": 686,
+            "top": 978,
+            "right": 720,
+            "bottom": 999
+        }
+    },
+    {
+        "uuid": "2c6202ae-11d2-42d3-84e3-14018d7aff11",
+        "type": "ListItem",
+        "name": "Contact GitHub Support",
+        "highlight_color": "#207d8c",
+        "coordinates": {
+            "left": 759,
+            "top": 977,
+            "right": 919,
+            "bottom": 1000
+        }
+    },
+    {
+        "uuid": "b4f633f4-0950-4b29-b1ae-e9fe369a8d13",
+        "type": "Hyperlink",
+        "name": "Contact GitHub Support",
+        "highlight_color": "#811457",
+        "coordinates": {
+            "left": 759,
+            "top": 978,
+            "right": 919,
+            "bottom": 999
+        }
+    },
+    {
+        "uuid": "c16157d6-e8eb-4842-b0c9-784c2a973b88",
+        "type": "ListItem",
+        "name": "Manage cookies",
+        "highlight_color": "#3bea42",
+        "coordinates": {
+            "left": 968,
+            "top": 977,
+            "right": 1077,
+            "bottom": 1000
+        }
+    },
+    {
+        "uuid": "5b104dfb-4ebd-495a-a19d-c8570152dd2c",
+        "type": "Button",
+        "name": "Manage cookies",
+        "highlight_color": "#fc8730",
+        "coordinates": {
+            "left": 968,
+            "top": 977,
+            "right": 1077,
+            "bottom": 1000
+        }
+    },
+    {
+        "uuid": "e33807d7-0202-40b7-94cc-8cbc52100f6b",
+        "type": "ListItem",
+        "name": "Do not share my personal information",
+        "highlight_color": "#4ca507",
+        "coordinates": {
+            "left": 1136,
+            "top": 977,
+            "right": 1389,
+            "bottom": 1000
+        }
+    },
+    {
+        "uuid": "34c5a66b-b70d-47ec-9cec-08bddfec708b",
+        "type": "Button",
+        "name": "Do not share my personal information",
+        "highlight_color": "#584397",
+        "coordinates": {
+            "left": 1136,
+            "top": 977,
+            "right": 1389,
+            "bottom": 1000
+        }
+    },
+    {
+        "uuid": "c2554a6d-9e32-48a6-b7a3-69e2a981fc12",
+        "type": "TabItem",
+        "name": "Google Gemini",
+        "highlight_color": "#214a7d",
+        "coordinates": {
+            "left": 0,
+            "top": 0,
+            "right": 279,
+            "bottom": 52
+        }
+    },
+    {
+        "uuid": "cf96ab89-879a-4c28-a52e-2be49918ac7d",
+        "type": "TabItem",
+        "name": "Google - My Activity",
+        "highlight_color": "#d70973",
+        "coordinates": {
+            "left": 276,
+            "top": 0,
+            "right": 555,
+            "bottom": 52
+        }
+    },
+    {
+        "uuid": "c1bfaaac-0c3f-4142-a8a3-4bf22550e29a",
+        "type": "TabItem",
+        "name": "Google - My Activity",
+        "highlight_color": "#4bae08",
+        "coordinates": {
+            "left": 553,
+            "top": 0,
+            "right": 833,
+            "bottom": 52
+        }
+    },
+    {
+        "uuid": "a4fc7e8c-18c6-45ac-bf36-757c5436c036",
+        "type": "TabItem",
+        "name": "Lista de verificare a Contului t\u0103u Google - Android - Cont Google Ajutor",
+        "highlight_color": "#307c3b",
+        "coordinates": {
+            "left": 829,
+            "top": 0,
+            "right": 1108,
+            "bottom": 52
+        }
+    },
+    {
+        "uuid": "4bc60ce7-5e4e-450b-8eba-5ac199b4b2ad",
+        "type": "TabItem",
+        "name": "Google One Plans",
+        "highlight_color": "#4cfddf",
+        "coordinates": {
+            "left": 1104,
+            "top": 0,
+            "right": 1383,
+            "bottom": 52
+        }
+    },
+    {
+        "uuid": "983d5d31-86d9-44b7-94a4-34e1991fc261",
+        "type": "TabItem",
+        "name": "Sign in to GitHub \u00b7 GitHub",
+        "highlight_color": "#08df2e",
+        "coordinates": {
+            "left": 1379,
+            "top": 0,
+            "right": 1658,
+            "bottom": 52
+        }
+    },
+    {
+        "uuid": "3d8c2756-7397-4a76-b8b1-e8913be2277f",
+        "type": "Button",
+        "name": "Close",
+        "highlight_color": "#ccd0d1",
+        "coordinates": {
+            "left": 1615,
+            "top": 8,
+            "right": 1650,
+            "bottom": 44
+        }
+    },
+    {
+        "uuid": "da988eed-57a9-4cae-9740-7ec0232541d3",
+        "type": "Button",
+        "name": "New Tab",
+        "highlight_color": "#64dea4",
+        "coordinates": {
+            "left": 1661,
+            "top": 0,
+            "right": 1697,
+            "bottom": 52
+        }
+    }
+]

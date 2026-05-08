@@ -374,6 +374,12 @@ if __name__ == "__main__":
     parser.add_argument("--app",          default="Brave",  help="Window title to target (default: Brave)")
     parser.add_argument("--max-explores", default=0, type=int,
                         help="Maximum number of ui_explorer calls (0 = unlimited)")
+    parser.add_argument("--no-chat",      action="store_true",
+                        help="Skip launching the chat UI after the session ends")
+    parser.add_argument("--model",        default="gpt-5",
+                        help="OpenAI model used by the chat app (default: gpt-5)")
+    parser.add_argument("--port",         default=5000, type=int,
+                        help="Port for the chat UI (default: 5000)")
     args = parser.parse_args()
 
     EXPLORER_SCRIPT = "ui_explorer.py"
@@ -382,3 +388,17 @@ if __name__ == "__main__":
         max_explores=args.max_explores,
     )
     navigator.run_session()
+
+    if not args.no_chat:
+        print("\n[*] Launching chat UI …  (Ctrl+C to stop)")
+        # Run analyze.py in the same interpreter so the user doesn't need a
+        # separate terminal.  sys.argv is patched so analyze.py's own argparse
+        # receives the right values.
+        import sys as _sys
+        _sys.argv = [
+            "analyze.py",
+            "--flow",  os.path.join(AI_DIR, "flow.json"),
+            "--model", args.model,
+            "--port",  str(args.port),
+        ]
+        exec(open("analyze.py").read())  # noqa: S102 — intentional local exec
