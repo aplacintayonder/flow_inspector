@@ -1,136 +1,174 @@
 {
-    "app": "Brave",
-    "session_date": "2026-05-08T22:00:03.627687",
-    "total_unique_screens": 5,
+    "app": "Notepad",
+    "session_date": "2026-05-09T12:31:44.815244",
+    "total_unique_screens": 3,
     "screens": [
         {
             "screen_index": 1,
-            "scan_id": "20260508_215926",
-            "timestamp": "2026-05-08T21:59:26.637471",
+            "scan_id": "20260509_123051",
+            "timestamp": "2026-05-09T12:30:51.555549",
             "image": "ai\\screen_001.png",
             "trigger": null,
-            "element_count": 54,
+            "element_count": 21,
             "interactions_performed": [
                 {
+                    "type": "Edit",
+                    "name": "Text Editor",
+                    "action": "type",
+                    "coordinates": {
+                        "left": 0,
+                        "top": 43,
+                        "right": 2560,
+                        "bottom": 1377
+                    }
+                },
+                {
                     "type": "Button",
-                    "name": "Back",
+                    "name": "Line up",
+                    "action": "click",
+                    "coordinates": {
+                        "left": 2543,
+                        "top": 43,
+                        "right": 2560,
+                        "bottom": 60
+                    }
+                },
+                {
+                    "type": "Button",
+                    "name": "Line down",
+                    "action": "click",
+                    "coordinates": {
+                        "left": 2543,
+                        "top": 1343,
+                        "right": 2560,
+                        "bottom": 1360
+                    }
+                },
+                {
+                    "type": "Button",
+                    "name": "Column left",
                     "action": "click",
                     "coordinates": {
                         "left": 0,
-                        "top": 58,
-                        "right": 43,
-                        "bottom": 94
+                        "top": 1360,
+                        "right": 17,
+                        "bottom": 1377
+                    }
+                },
+                {
+                    "type": "Button",
+                    "name": "Column right",
+                    "action": "click",
+                    "coordinates": {
+                        "left": 2526,
+                        "top": 1360,
+                        "right": 2543,
+                        "bottom": 1377
+                    }
+                },
+                {
+                    "type": "MenuItem",
+                    "name": "System",
+                    "action": "click",
+                    "coordinates": {
+                        "left": 0,
+                        "top": 0,
+                        "right": 22,
+                        "bottom": 22
+                    }
+                },
+                {
+                    "type": "MenuItem",
+                    "name": "File",
+                    "action": "click",
+                    "coordinates": {
+                        "left": 0,
+                        "top": 23,
+                        "right": 32,
+                        "bottom": 42
                     }
                 }
             ]
         },
         {
             "screen_index": 2,
-            "scan_id": "20260508_215933",
-            "timestamp": "2026-05-08T21:59:33.914412",
+            "scan_id": "20260509_123121",
+            "timestamp": "2026-05-09T12:31:22.035970",
             "image": "ai\\screen_002.png",
             "trigger": {
-                "type": "Button",
-                "name": "Back",
+                "type": "MenuItem",
+                "name": "File",
                 "action": "click"
             },
-            "element_count": 87,
+            "element_count": 21,
             "interactions_performed": [
                 {
                     "type": "Button",
-                    "name": "Forward",
+                    "name": "Maximize",
                     "action": "click",
                     "coordinates": {
-                        "left": 45,
-                        "top": 58,
-                        "right": 80,
-                        "bottom": 94
+                        "left": 1671,
+                        "top": 240,
+                        "right": 1717,
+                        "bottom": 270
                     }
                 }
             ]
         },
         {
             "screen_index": 3,
-            "scan_id": "20260508_215940",
-            "timestamp": "2026-05-08T21:59:41.195130",
+            "scan_id": "20260509_123129",
+            "timestamp": "2026-05-09T12:31:29.505039",
             "image": "ai\\screen_003.png",
             "trigger": {
                 "type": "Button",
-                "name": "Forward",
+                "name": "Maximize",
                 "action": "click"
             },
-            "element_count": 89,
+            "element_count": 21,
             "interactions_performed": [
                 {
-                    "type": "Button",
-                    "name": "Reload",
+                    "type": "MenuItem",
+                    "name": "Edit",
                     "action": "click",
                     "coordinates": {
-                        "left": 83,
-                        "top": 58,
-                        "right": 119,
-                        "bottom": 94
-                    }
-                }
-            ]
-        },
-        {
-            "screen_index": 4,
-            "scan_id": "20260508_215948",
-            "timestamp": "2026-05-08T21:59:48.501253",
-            "image": "ai\\screen_004.png",
-            "trigger": {
-                "type": "Button",
-                "name": "Reload",
-                "action": "click"
-            },
-            "element_count": 87,
-            "interactions_performed": [
-                {
-                    "type": "Button",
-                    "name": "Bookmark this tab",
-                    "action": "click",
-                    "coordinates": {
-                        "left": 286,
-                        "top": 58,
-                        "right": 322,
-                        "bottom": 94
+                        "left": 32,
+                        "top": 23,
+                        "right": 66,
+                        "bottom": 42
                     }
                 },
                 {
-                    "type": "Edit",
-                    "name": "Address and search bar",
-                    "action": "type",
-                    "coordinates": {
-                        "left": 380,
-                        "top": 58,
-                        "right": 1449,
-                        "bottom": 94
-                    }
-                }
-            ]
-        },
-        {
-            "screen_index": 5,
-            "scan_id": "20260508_215958",
-            "timestamp": "2026-05-08T21:59:58.607609",
-            "image": "ai\\screen_005.png",
-            "trigger": {
-                "type": "Edit",
-                "name": "Address and search bar",
-                "action": "type"
-            },
-            "element_count": 93,
-            "interactions_performed": [
-                {
-                    "type": "Button",
-                    "name": "Edit bookmark for this tab",
+                    "type": "MenuItem",
+                    "name": "Format",
                     "action": "click",
                     "coordinates": {
-                        "left": 286,
-                        "top": 58,
-                        "right": 322,
-                        "bottom": 94
+                        "left": 66,
+                        "top": 23,
+                        "right": 118,
+                        "bottom": 42
+                    }
+                },
+                {
+                    "type": "MenuItem",
+                    "name": "View",
+                    "action": "click",
+                    "coordinates": {
+                        "left": 118,
+                        "top": 23,
+                        "right": 157,
+                        "bottom": 42
+                    }
+                },
+                {
+                    "type": "MenuItem",
+                    "name": "Help",
+                    "action": "click",
+                    "coordinates": {
+                        "left": 157,
+                        "top": 23,
+                        "right": 196,
+                        "bottom": 42
                     }
                 }
             ]

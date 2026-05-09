@@ -54,7 +54,7 @@ load_dotenv_file(".env")
 # ---------------------------------------------------------------------------
 parser = argparse.ArgumentParser(description="GabiBot Chat UI")
 parser.add_argument("--flow",  default="ai/flow.json",    help="Path to flow.json")
-parser.add_argument("--model", default=os.getenv("AZURE_OPENAI_MODEL", "gpt-5"),           help="OpenAI model to use")
+parser.add_argument("--model", default=os.getenv("AZURE_OPENAI_MODEL", "gpt-5.4"),           help="OpenAI model to use")
 parser.add_argument("--port",  default=5000,  type=int,   help="Port (default 5000)")
 args = parser.parse_args()
 

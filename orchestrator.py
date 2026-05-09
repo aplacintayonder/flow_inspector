@@ -376,7 +376,7 @@ if __name__ == "__main__":
                         help="Maximum number of ui_explorer calls (0 = unlimited)")
     parser.add_argument("--no-chat",      action="store_true",
                         help="Skip launching the chat UI after the session ends")
-    parser.add_argument("--model",        default="gpt-5",
+    parser.add_argument("--model",        default="gpt-5.4",
                         help="OpenAI model used by the chat app (default: gpt-5)")
     parser.add_argument("--port",         default=5000, type=int,
                         help="Port for the chat UI (default: 5000)")
@@ -391,14 +391,19 @@ if __name__ == "__main__":
 
     if not args.no_chat:
         print("\n[*] Launching chat UI …  (Ctrl+C to stop)")
-        # Run analyze.py in the same interpreter so the user doesn't need a
-        # separate terminal.  sys.argv is patched so analyze.py's own argparse
-        # receives the right values.
-        import sys as _sys
-        _sys.argv = [
-            "analyze.py",
-            "--flow",  os.path.join(AI_DIR, "flow.json"),
-            "--model", args.model,
-            "--port",  str(args.port),
-        ]
-        exec(open("analyze.py").read())  # noqa: S102 — intentional local exec
+        # Launch analyze.py as a child process from this folder so its .env
+        # lookup remains predictable regardless of the caller's current dir.
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        analyze_path = os.path.join(script_dir, "analyze.py")
+        flow_path = os.path.join(script_dir, AI_DIR, "flow.json")
+        subprocess.run(
+            [
+                os.sys.executable,
+                analyze_path,
+                "--flow", flow_path,
+                "--model", args.model,
+                "--port", str(args.port),
+            ],
+            cwd=script_dir,
+            check=True,
+        )
